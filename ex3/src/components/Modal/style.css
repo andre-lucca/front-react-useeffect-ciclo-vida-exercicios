@@ -1,0 +1,106 @@
+@keyframes popup-modal {
+  0% {
+    scale: .9;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+dialog {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+
+  border: none;
+  background-color: rgba(0 0 0 / .5);
+}
+
+.modal-container {
+  box-sizing: border-box;
+
+  width: 774px;
+  height: 965px;
+  margin: auto;
+  padding: 80px 60px;
+
+  position: absolute;
+  inset: 0;
+
+  text-align: center;
+
+  border-radius: 8px;
+  background-color: white;
+  animation: popup-modal .5s;
+}
+
+.close-icon {
+  width: 36px;
+
+  position: absolute;
+  top: 46px;
+  right: 46px;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.modal-content {
+  height: 100%;
+}
+
+.product-image {
+  height: 485px;
+}
+
+.modal-body {
+  margin-bottom: 64px;
+}
+
+.modal-content h4 {
+  font-size: 22px;
+}
+
+.modal-content p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+
+  text-align: left;
+}
+
+.modal-footer button {
+  width: 350px;
+  height: 64px;
+
+  font-size: 22px;
+  text-transform: uppercase;
+
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #52BB50;
+}
+
+.modal-footer>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.old-price {
+  font-size: 22px;
+}
+
+.current-price {
+  font-size: 32px;
+}
